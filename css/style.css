@@ -259,3 +259,35 @@ main .sobre{
         transform: translate3d(0, 0 , 0);
     }
 }
+
+/* Responsividade */
+
+@media(max-width: 992px){
+
+    .section-div img {
+        display: none;
+    }
+    .section-div{
+        background-image: url(../img/photo.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    header .navegacao-primaria{
+        display:none;
+    }
+
+    header i{
+        color:#f7f7f7;
+        font-size: 2rem;
+    }
+
+    .sobre img{
+        grid-column: 1/-1;
+        justify-self: center;
+    }
+    .sobre_conteudo{
+        grid-column: 1/-1;
+    }
+}

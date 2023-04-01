@@ -1,3 +1,4 @@
+
 const title = document.querySelector('.digitando');
 
 function activeWorld(element){
@@ -11,3 +12,10 @@ function activeWorld(element){
 }
 
 activeWorld(title);
+
+
+const activeMenu = document.querySelector('.fa-bars');
+
+activeMenu.addEventListener('click',()=>{
+    activeMenu.classList.toggle('fa-x')
+})
