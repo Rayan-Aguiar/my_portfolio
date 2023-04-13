@@ -377,6 +377,8 @@ main .sobre{
 
 /* Experiencias */
 
+
+
 .my_resume{
     color: white;
 }
@@ -427,7 +429,16 @@ main .sobre{
 .resume_generica .experience_content div{
     background-color: #222;
     padding: 40px;
+    display: none;
+    animation: sideSection .5s ease-in-out forwards;
     position: relative;
+}
+.resume_generica .experience_content div.active{
+    display: block;
+}
+
+.experience_content ul li.active {
+    color: #3e3d3d;
 }
 
 .resume_generica .experience_content div::before{
@@ -456,13 +467,25 @@ main .sobre{
     font-size: 1.1rem;
 }
 
+
+
 /* Diplomas e Cursos */
 
 .resume_generica .education_content div{
     background-color: #222;
     padding: 40px;
+    display: none;
+    animation: sideSection .5s ease-in-out forwards;
     position: relative;
 }
+.resume_generica .education_content div.active{
+    display: block;
+}
+
+.education_content ul li.active {
+    color: #3e3d3d;
+}
+
 
 .education_content ul {
     color: #ff5d56;
