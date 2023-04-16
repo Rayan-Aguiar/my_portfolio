@@ -665,6 +665,12 @@ main .sobre{
     color: #707070;
 }
 
+.projects_models ul li.active {
+    background-color: #dc3545;
+    color: #151515;
+    font-weight: bold;
+}
+
 .projects_storage ul {
     display: grid;
     margin-top: 60px;
@@ -674,8 +680,14 @@ main .sobre{
 }
 
 .projects_storage ul li{
+    display: none;
     max-width: 100%;
     height: 100%;
+}
+
+.projects_storage ul li.active{
+    display: block;
+    animation: animationImageButtom 2s ease-in-out forwards;
 }
 
 .projects_storage ul li  img{
@@ -691,6 +703,17 @@ main .sobre{
     padding: 20px 40px;
     border: 1px solid #333;
     color: #707070;
+}
+
+@keyframes animationImageButtom{
+    0%{
+        opacity: 0;
+        transform: translate3d(0, -30px, 0);
+    }
+    100%{
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
 }
 
 /* Responsividade */
